@@ -1,0 +1,41 @@
+<div class="content-wrapper">
+    <div class="content-block">
+        <% @posts.each do |post|%>
+        
+        <div class="content">
+            <div class="user-about">
+                <div class="image">
+                    <%= image_tag "no_image.jpg" %>  
+                </div>
+                <div class="profile">
+                    <div class="name-history">
+                        <div class="name">
+                            ゆうま
+                        </div>
+                        <div class="learning-history">
+                            学習歴：3年
+                        </div>
+                    </div>
+                    <div class="purpose">
+                        ruby on railsを学んでいる目的：リモートでエンジニアとして働きたいから。
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <p><%=  post.content %></p>
+            </div>
+            <div class="action-menu">
+                <div class="like"></div>
+                <div class="comment"></div>
+            </div>
+        </div>
+        <% end %>
+    </div>
+    <div class="sidebar">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</div>
+
+
