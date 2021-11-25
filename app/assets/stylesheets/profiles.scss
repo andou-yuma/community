@@ -1,18 +1,30 @@
-// Place all the styles related to the posts controller here.
+// Place all the styles related to the profiles controller here.
 // They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// You can use Sass (SCSS) here: http://sass-lang.com
 
-#posts-new, #posts-edit, #posts-create, #posts-update{
+#profiles-new, #profiles-edit, #profiles-create, #profiles-update{
   form{
-    textarea{
+    .form_group{
+    margin: 10px 0; 
+    
+    label{
+      margin-bottom: 5px;
+      display: block;
+    }
+    input[type="text"],input[type="number"]{
       width: 100%;
-      height: 300px;
       padding: 5px;
       border-radius: 5px;
       border: 1px solid #ccc;
       appearance: none;
       -webkit-appearance: none;
-      -moz-appearance: none　;
+      -moz-appearance: none;
+    }
+    .image-preview{
+      img{
+        max-width: 200px;
+      }
+    }
     }
     .submit-block{
         display: flex;

@@ -24,6 +24,11 @@ img {
   justify-content: space-between;
 }
 
+#header .logo img{
+  width: 175px;
+  height: auto;
+}
+
 #header #nav {
   list-style: none;
   display: flex;
@@ -74,4 +79,5 @@ img {
   background-color: red;
   color: #fff;
   padding: 10px;
+  margin-bottom: 15px
 }
